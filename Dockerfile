@@ -1,4 +1,4 @@
-FROM uvatbc/qt:qt5
+FROM therecipe/qt:linux
 
 # Keep the update separate so that Docker build system can cache it.
 RUN sudo apt-get update

@@ -1,4 +1,4 @@
-This is a docker file based on [therecipe/qt:linux](https://hub.docker.com/r/therecipe/qt/). 
+This is a docker file based on [ubuntu:14.04](https://hub.docker.com/_/ubuntu/). 
 
 It additionally contains software for debian packaging:
 - dh-make

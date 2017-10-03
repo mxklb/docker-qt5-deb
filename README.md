@@ -1,4 +1,4 @@
-This is a docker file based on [ubuntu:14.04](https://hub.docker.com/_/ubuntu/).
+This is a docker file based on [ubuntu](https://hub.docker.com/_/ubuntu/).
 
 It's made to build Qt5 apps, has installed:
 - qt5-default

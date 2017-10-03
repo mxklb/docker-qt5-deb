@@ -1,8 +1,6 @@
 FROM ubuntu:14.04
 
-# Keep the update separate so that Docker build system can cache it.
-RUN sudo apt-get update
-RUN sudo apt-get -y install \
+RUN apt-get update && apt-get install -y \
         qt5-default \
         qt5-qmake \
         dpkg-dev \
@@ -10,4 +8,5 @@ RUN sudo apt-get -y install \
         gdb \
         lcov \
         gcovr \
-        git
+        git \
+    && rm -rf /var/lib/apt/lists/*

@@ -8,5 +8,4 @@ RUN apt-get update && apt-get install -y \
         gdb \
         lcov \
         gcovr \
-        git \
-    && rm -rf /var/lib/apt/lists/*
+        git

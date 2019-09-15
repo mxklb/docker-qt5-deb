@@ -1,6 +1,6 @@
 FROM ubuntu:devel
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update --allow-unauthenticated && apt-get install -y \
         qt5-default \
         qt5-qmake \
         dpkg-dev \
@@ -8,5 +8,4 @@ RUN apt-get update && apt-get install -y \
         gdb \
         lcov \
         gcovr \
-        git \
-    && rm -rf /var/lib/apt/lists/*
+        git
